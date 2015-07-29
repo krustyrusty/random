@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+
+<form>
+
+
+<fieldset>
+<legend>LAA:</legend>
+
+First name:<br>
+<input type="text" name="firstname" value="Mickey">
+<br>
+Last name:<br>
+<input type="text" name="lastname" value="Mouse">
+
+    <input type="radio" name="sex" value="male" checked>Male
+<br>
+<input type="radio" name="sex" value="female">Female
+
+    <select name="cars">
+<option value="volvo">Volvo</option>
+<option value="saab">Saab</option>
+<option value="fiat">Fiat</option>
+<option value="audi">Audi</option>
+</select>
+
+    <textarea name="message" rows="10" cols="30">
+The cat was playing in the garden.
+</textarea>
+
+    <button type="button" onclick="alert('Hello World!')">Click Me!</button>
+
+
+    <input list="browsers">
+<datalist id="browsers">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+
+    User name:<br>
+<input type="text" name="username">
+<br>
+User password:<br>
+<input type="password" name="psw">
+
+    <input type="checkbox" name="vehicle" value="Bike">I have a bike
+<br>
+<input type="checkbox" name="vehicle" value="Car">I have a car
+
+    Quantity (between 1 and 5):
+  <input type="number" name="quantity" min="1" max="5">
+
+     Birthday:
+  <input type="date" name="bday">
+
+    Enter a date before 1980-01-01:
+  <input type="date" name="bday" max="1979-12-31"><br>
+  Enter a date after 2000-01-01:
+  <input type="date" name="bday" min="2000-01-02"><br>
+
+     Select your favorite color:
+  <input type="color" name="favcolor">
+
+      <input type="range" name="points" min="0" max="10">
+
+     Birthday (month and year):
+  <input type="month" name="bdaymonth">
+
+    Select a week:
+  <input type="week" name="week_year">
+
+
+     Select a time:
+  <input type="time" name="usr_time">
+
+    Birthday (date and time):
+  <input type="datetime" name="bdaytime">
+
+    Birthday (date and time):
+  <input type="datetime-local" name="bdaytime">
+
+    E-mail:
+  <input type="email" name="email">
+
+     Search Google:
+  <input type="search" name="googlesearch">
+
+     Telephone:
+  <input type="tel" name="usrtel">
+
+    Add your homepage:
+  <input type="url" name="homepage">
+
+    <!-- value specifies the initial value of an input field-->
+    c value="John">
+<br>
+Last name:<br>
+<input type="text" name="lastname">
+
+
+    First name:<br>
+<input type="text" name="firstname" value="John" readonly>
+<br>
+Last name:<br>
+<input type="text" name="lastname">
+
+
+    First name:<br>
+<input type="text" name="firstname" value="John" disabled>
+<br>
+Last name:<br>
+<input type="text" name="lastname">
+
+
+    First name:<br>
+<input type="text" name="firstname" value="John" size="40">
+<br>
+Last name:<br>
+<input type="text" name="lastname">
+
+
+    First name:<br>
+<input type="text" name="firstname" maxlength="10">
+
+    <!--The autofocus attribute is a boolean attribute.
+
+When present, it specifies that an <input> element should automatically get focus when the page loads.-->
+    First name:<input type="text" name="fname" autofocus>
+
+    <!--
+    The height and width attributes specify the height and width of an <input> element.
+
+The height and width attributes are only used with <input type="image">.
+-->
+    <input type="image" src="img_submit.gif" alt="Submit" width="48" height="48">
+
+
+<!--
+The list attribute refers to a <datalist> element that contains pre-defined options for an <input> element.
+-->
+    <input list="browsers">
+
+<datalist id="browsers">
+  <option value="Internet Explorer">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+
+
+    <!--
+    The min and max attributes specify the minimum and maximum value for an <input> element.
+
+The min and max attributes work with the following input types: number, range, date, datetime, datetime-local, month, time and week.
+-->
+
+    Enter a date before 1980-01-01:
+<input type="date" name="bday" max="1979-12-31">
+
+Enter a date after 2000-01-01:
+<input type="date" name="bday" min="2000-01-02">
+
+Quantity (between 1 and 5):
+<input type="number" name="quantity" min="1" max="5">
+
+
+    <!--
+    The multiple attribute is a boolean attribute.
+
+When present, it specifies that the user is allowed to enter more than one value in the <input> element.
+
+The multiple attribute works with the following input types: email, and file.
+
+A file upload field that accepts multiple values:
+-->
+
+    Select images: <input type="file" name="img" multiple>
+
+
+    <!--
+    The pattern attribute specifies a regular expression that the <input> element's value is checked against.
+
+The pattern attribute works with the following input types: text, search, url, tel, email, and password.
+
+Tip: Use the global title attribute to describe the pattern to help the user.
+
+Tip: Learn more about regular expressions in our JavaScript tutorial.
+
+An input field that can contain only three letters (no numbers or special characters):
+-->
+
+    Country code: <input type="text" name="country_code" pattern="[A-Za-z]{3}" title="Three letter country code">
+
+   <!--
+
+    The placeholder attribute specifies a hint that describes the expected value of an input field (a sample value or a short description of the format).
+
+The hint is displayed in the input field before the user enters a value.
+
+The placeholder attribute works with the following input types: text, search, url, tel, email, and password.
+
+-->
+
+<input type="text" name="fname" placeholder="First name">
+
+
+<!--
+The required attribute is a boolean attribute.
+
+When present, it specifies that an input field must be filled out before submitting the form.
+
+The required attribute works with the following input types: text, search, url, tel, email, password, date pickers, number, checkbox, radio, and file.
+
+-->
+
+Username: <input type="text" name="usrname" required>
+
+
+<!--
+The step attribute specifies the legal number intervals for an <input> element.
+
+Example: if step="3", legal numbers could be -3, 0, 3, 6, etc.
+
+Tip: The step attribute can be used together with the max and min attributes to create a range of legal values.
+
+The step attribute works with the following input types: number, range, date, datetime, datetime-local, month, time and week.
+
+-->
+
+<input type="number" name="points" step="3">
+
+
+
+    <br><br>
+<input type="submit" value="Submit">
+</fieldset>
+</form>
+
+</body>
+</html>
+
+{% if error_message %}<p><strong>{{ error_message }}</strong></p>{% endif %}
+
+<form action="{% url 'polls:vote' question.id %}" method="post">
+{% csrf_token %}
+{% for choice in question.choice_set.all %}
+    <input type="radio" name="choice" id=choice{{ forloop.counter }}" value="{{ choice.id }}"/>
+    <label for="choice"{{ forloop.counter }}">{{ choice.choice_text }}</label><br />
+{% endfor %}
+<input type="submit" value="Vote" />
+</form>
+
+
+{% if list_of_services %}
+    <ul>
+    {% for service in list_of_services %}
+        <li><a href="{% url 'my_app:detail' service.id %}">{{service.service_name}}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No services are available.</p>
+{% endif %}
+
+ account_id = models.ForeignKey(AccountID)
+    company_name = models.CharField(max_length=200, default=' ', null=True)
+    company_url =
+first_name = models.CharField(max_length=50, default=' ', null=True)
+    last_name = models.CharField(max_length=50, default=' ', null=True)
+    email = models.CharField(max_length=75, default=' ', null=True)
+    phone_number = models.CharField(max_length
+attention = models.CharField(max_length=50, default=' ', null=True)
+    address_line1 = models.CharField(max_length=200, default=' ', null=True)
+    address_line2 = models.CharField(max_length=200, default=' ', null=True)
+    city = models.CharField(max_length=50, default=' ', null=True)
+    state = models.CharField(max_length=2, default="NY", null=True)
+    zipcode = models.CharField(max_length=5, default=' ', null=True)
+    country = models.CharField(max_length=50, default="US")
+    is_billing = models.BooleanField(default=False)

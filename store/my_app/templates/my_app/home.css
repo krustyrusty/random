@@ -1,0 +1,15 @@
+h1{
+	letter-spacing: 1px;
+	font-family: Arial, sans-serif;
+	font-size: 16;
+	font-weight: bold;
+	padding-bottom: .5em;		
+}
+
+p.lab_names{
+	color:  blue;
+}
+
+button{
+	color: green;
+}

@@ -1,0 +1,9 @@
+{% if list_of_services %}
+    <ul>
+    {% for service in list_of_services %}
+        <li><a href="{% url 'my_app:detail' service.id %}">{{service.service_name}}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No services are available.</p>
+{% endif %}

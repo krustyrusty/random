@@ -1,0 +1,9 @@
+{% if account_item_list %}
+    <ul>
+    {% for item in account_item_list %}
+        <li><a href="{% url 'my_app:account_detail' item.id %}">{{ item.last_name }}</a></li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No account items are available.</p>
+{% endif %}
